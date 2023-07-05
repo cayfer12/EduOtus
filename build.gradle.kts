@@ -1,29 +1,25 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.8.21"
-    application
+    kotlin("jvm") apply false
 }
 
-group = "ru.otus.otuskotlin.marketplace"
-version = "1.0-SNAPSHOT"
+group = "ru.edu.otuskotlin.clickhouse"
+version = "1.0"
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation(kotlin("test"))
-}
-
-tasks.test {
-    useJUnitPlatform()
-}
+subprojects {
+    group = rootProject.group
+    version = rootProject.version
+    repositories {
+        mavenCentral()
+    }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "11"
 }
 
-application {
-    mainClass.set("MainKt")
 }
