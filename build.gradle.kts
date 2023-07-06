@@ -4,8 +4,8 @@ plugins {
     kotlin("jvm") apply false
 }
 
-group = "ru.edu.otuskotlin.clickhouse"
-version = "1.0"
+group = "ru.otus.otuskotlin.clickhouse"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -18,8 +18,7 @@ subprojects {
         mavenCentral()
     }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "11"
-}
-
+    tasks.withType<KotlinCompile> {
+        kotlinOptions.jvmTarget = "11"
+    }
 }

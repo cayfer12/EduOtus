@@ -1,8 +1,9 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
-class Test {
+
+class FirstTest {
     @Test
     fun test(){
-        assertEquals(12, 2*6)
+        assertEquals(12, 6*2)
     }
 }

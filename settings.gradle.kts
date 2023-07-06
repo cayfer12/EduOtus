@@ -1,5 +1,4 @@
-
-rootProject.name = "EduOtus"
+rootProject.name = "education"
 
 pluginManagement {
     plugins {
@@ -10,4 +9,5 @@ pluginManagement {
     }
 }
 
-include("ClickHouse")
+include("click-house")
+

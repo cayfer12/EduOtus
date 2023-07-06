@@ -3,7 +3,6 @@
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-!**/src/Main/**/build/
-!**/src/Test/**/build/
+!**/src/*Main/**/build/
+!**/src/*Test/**/build/
 /.idea/
-/.target/
