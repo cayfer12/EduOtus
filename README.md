@@ -1,1 +1,0 @@
-# education project to Otus
